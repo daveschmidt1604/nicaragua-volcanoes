@@ -45,7 +45,7 @@ section p {
 .hero {
   position: relative;
   width: 100%;
-  height: 580px;
+  height: 460px;
   overflow: hidden;
 }
 
@@ -304,17 +304,38 @@ footer {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+.gallery-item a {
+  display: block;
+  position: relative;
+}
+
+.gallery-item a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    rgba(0, 0, 0, 0.25)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='19' y1='19' x2='15.5' y2='15.5'/%3E%3C/svg%3E")
+    center / 28px no-repeat;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.gallery-item a:hover::after {
+  opacity: 1;
+}
+
 .gallery-item img {
   width: 100%;
   height: 160px;
   object-fit: cover;
   display: block;
   cursor: pointer;
-  transition: opacity 0.2s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item img:hover {
-  opacity: 0.9;
   transform: scale(1.04);
 }
 
@@ -379,6 +400,26 @@ footer {
 }
 
 /* =========================
+   MAP LABELS
+========================= */
+
+.map-label {
+  background: white;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.5px;
+  color: #222;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.map-label::before {
+  border-right-color: white !important;
+}
+
+/* =========================
    CUSTOM MAP MARKERS
 ========================= */
 
@@ -394,6 +435,103 @@ footer {
 
 .leaflet-marker-icon {
   transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.map-label:hover {
+  background: #e63946;
+  color: white;
+}
+
+/* =========================
+   RESPONSIVE / MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 420px;
+  }
+
+  .hero-overlay {
+    padding: 28px 20px 36px;
+  }
+
+  .hero-home .hero-overlay {
+    padding-bottom: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-home .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .stats-strip {
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    padding: 14px 28px;
+    flex: 1 1 45%;
+  }
+
+  .volcano-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 85%;
+    max-width: 340px;
+  }
+
+  #map {
+    height: 300px;
+    margin: 12px auto;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .key-facts dl {
+    grid-template-columns: 110px 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 320px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7em;
+  }
+
+  .hero-home .hero-text h1 {
+    font-size: 1.9em;
+  }
+
+  .stat {
+    flex: 1 1 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 12px 16px;
+  }
+
+  .stat:last-child {
+    border-bottom: none;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  section p {
+    text-align: left;
+  }
 }
 
 /* =========================
@@ -401,7 +539,7 @@ footer {
 ========================= */
 
 .hero-home img {
-  object-position: center 70%;
+  object-position: center 82%;
 }
 
 .hero-home .hero-overlay {

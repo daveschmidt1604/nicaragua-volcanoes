@@ -21,23 +21,20 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map
 
 var masayaMarker = L.marker([11.984, -86.161]).addTo(map);
 
-masayaMarker.bindPopup(
-    "<b>Masaya Volcano</b><br><a href='Volcanoes/masaya.html'>Open page</a>"
-);
+masayaMarker.bindTooltip("Masaya", { permanent: true, direction: 'right', className: 'map-label' });
+masayaMarker.on('click', function() { window.location.href = 'Volcanoes/masaya.html'; });
 
 
 var telicaMarker = L.marker([12.602, -86.845]).addTo(map);
 
-telicaMarker.bindPopup(
-    "<b>Telica Volcano</b><br><a href='Volcanoes/telica.html'>Open page</a>"
-);
+telicaMarker.bindTooltip("Telica", { permanent: true, direction: 'right', className: 'map-label' });
+telicaMarker.on('click', function() { window.location.href = 'Volcanoes/telica.html'; });
 
 
 var cerroMarker = L.marker([12.506, -86.702]).addTo(map);
 
-cerroMarker.bindPopup(
-    "<b>Cerro Negro Volcano</b><br><a href='Volcanoes/cerro-negro.html'>Open page</a>"
-);
+cerroMarker.bindTooltip("Cerro Negro", { permanent: true, direction: 'right', className: 'map-label' });
+cerroMarker.on('click', function() { window.location.href = 'Volcanoes/cerro-negro.html'; });
 
 
 // =============================

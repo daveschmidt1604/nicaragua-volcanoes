@@ -444,6 +444,28 @@ footer {
 }
 
 /* =========================
+   HOMEPAGE HERO VARIANT
+========================= */
+
+.hero-home img {
+  object-position: center 82%;
+}
+
+.hero-home .hero-overlay {
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 80px;
+}
+
+.hero-home .hero-text {
+  text-align: center;
+}
+
+.hero-home .hero-text h1 {
+  font-size: 3.2em;
+}
+
+/* =========================
    RESPONSIVE / MOBILE
 ========================= */
 
@@ -457,7 +479,8 @@ footer {
   }
 
   .hero-home .hero-overlay {
-    padding-bottom: 40px;
+    justify-content: center;
+    padding: 28px 20px;
   }
 
   .hero-text h1 {
@@ -532,28 +555,6 @@ footer {
   section p {
     text-align: left;
   }
-}
-
-/* =========================
-   HOMEPAGE HERO VARIANT
-========================= */
-
-.hero-home img {
-  object-position: center 82%;
-}
-
-.hero-home .hero-overlay {
-  align-items: center;
-  justify-content: flex-end;
-  padding-bottom: 80px;
-}
-
-.hero-home .hero-text {
-  text-align: center;
-}
-
-.hero-home .hero-text h1 {
-  font-size: 3.2em;
 }
 
 /* =========================

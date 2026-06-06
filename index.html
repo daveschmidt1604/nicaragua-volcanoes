@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Volcanic Activity in Nicaragua</title>
+
+<link rel="stylesheet" href="CSS/style.css">
+
+<!-- Leaflet map library -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<div class="hero hero-home">
+  <img src="Gallery/homepage/nicaragua_volcanic_arc_2024.jpg" alt="Volcanic peaks of the Maribios chain, Nicaragua, 2024">
+  <div class="hero-overlay">
+    <div class="hero-text">
+      <h1>Volcanic Activity in Nicaragua</h1>
+      <p class="volcano-subtitle">Masaya · Telica · Cerro Negro</p>
+    </div>
+  </div>
+</div>
+
+<div class="stats-strip">
+  <div class="stat">
+    <span class="stat-number">3</span>
+    <span class="stat-label">Volcanoes</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">1850</span>
+    <span class="stat-label">First Documented Eruption</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">30+</span>
+    <span class="stat-label">Eruptions Documented</span>
+  </div>
+</div>
+
+<section>
+<p>
+This project documents volcanic activity at three of Nicaragua's most active volcanoes — Masaya, Telica, and Cerro Negro —
+drawing on field observations, drone imagery, and monitoring data spanning more than three decades.
+Together they represent the diversity of eruptive styles along the Maribios volcanic chain:
+persistent lava lake degassing, explosive Vulcanian eruptions, and basaltic cinder cone activity.
+</p>
+</section>
+
+<section>
+<h2>Volcano Map</h2>
+<div id="map"></div>
+</section>
+
+<section class="volcano-cards">
+
+<div class="card">
+<img class="card-image" src="Gallery/masaya/masaya_2017_drone_001.jpg" alt="Aerial view of Masaya volcano">
+<h3>Masaya</h3>
+<p>Persistent lava lake and strong degassing activity.</p>
+<a id="masayaBtn" href="Volcanoes/masaya.html">Explore</a>
+</div>
+
+<div class="card">
+<img class="card-image" src="Gallery/telica/telica_2022_drone_001.jpg" alt="Aerial view of Telica volcano">
+<h3>Telica</h3>
+<p>Highly active stratovolcano with frequent ash eruptions.</p>
+<a id="telicaBtn" href="Volcanoes/telica.html">Explore</a>
+</div>
+
+<div class="card">
+<img class="card-image" src="Gallery/cerro-negro/cerro-negro_2017_drone_002.jpg" alt="Aerial view of Cerro Negro volcano">
+<h3>Cerro Negro</h3>
+<p>Young cinder cone volcano with explosive eruptions.</p>
+<a id="cerroBtn" href="Volcanoes/cerro-negro.html">Explore</a>
+</div>
+
+</section>
+
+<footer>
+<nav class="footer-links">
+  <a href="Volcanoes/masaya.html">Masaya</a>
+  <a href="Volcanoes/telica.html">Telica</a>
+  <a href="Volcanoes/cerro-negro.html">Cerro Negro</a>
+  <a href="about.html">About & Contact</a>
+</nav>
+</footer>
+
+<script src="JS/map.js"></script>
+
+</body>
+</html>

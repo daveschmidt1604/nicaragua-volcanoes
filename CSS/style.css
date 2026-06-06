@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;600&display=swap');
+
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #1c0a00, #3b1200);
+  color: white;
+  text-align: center;
+  padding: 28px 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+section {
+  padding: 10px 20px;
+}
+
+section:nth-of-type(even) {
+  background: #f0f0f0;
+}
+
+section p {
+  max-width: 700px;
+  margin: 16px auto;
+  text-align: justify;
+}
+
+/* =========================
+   HERO BANNER IMAGE
+========================= */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark gradient for text readability */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.50) 0%,
+    rgba(0, 0, 0, 0.05) 45%,
+    rgba(0, 0, 0, 0.60) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Bottom fade into page background */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: linear-gradient(to bottom, transparent, #f4f4f4);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 32px 44px;
+}
+
+.hero-back {
+  align-self: flex-start;
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  padding: 5px 14px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.hero-back:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.hero-text h1 {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 2.6em;
+  margin: 0 0 8px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+}
+
+.volcano-subtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.82em;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Back button in volcano page headers */
+
+header a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 5px 14px;
+  border-radius: 4px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
+}
+
+header a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#map {
+  height: 400px;
+  max-width: 860px;
+  margin: 20px auto;
+}
+
+.volcano-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background: #e63946;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
+}
+
+.card a:hover {
+  background: #c1121f;
+}
+
+.card-image {
+  display: block;
+  width: calc(100% + 40px);
+  height: 150px;
+  object-fit: cover;
+  margin: -20px -20px 16px -20px;
+  border-radius: 8px 8px 0 0;
+}
+
+footer {
+  text-align: center;
+  padding: 14px;
+  background: #ddd;
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 30px;
+}
+
+/* =========================
+   KEY FACTS BOX
+========================= */
+
+.key-facts {
+  background: #fff;
+  border-left: 4px solid #e63946;
+  padding: 16px 20px;
+  margin: 16px auto;
+  max-width: 700px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.key-facts dl {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 6px 12px;
+  margin: 0;
+}
+
+.key-facts dt {
+  font-family: 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 0.4px;
+}
+
+.key-facts dd {
+  margin: 0;
+}
+
+.key-facts a {
+  color: #e63946;
+  text-decoration: none;
+}
+
+.key-facts a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   ACTIVITY TIMELINE
+========================= */
+
+.timeline {
+  list-style: none;
+  padding-left: 28px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-left: 3px solid #e63946;
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -36px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background: #e63946;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #e63946;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.gallery-item {
+  margin: 0;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  opacity: 0.9;
+  transform: scale(1.04);
+}
+
+.gallery-item figcaption {
+  padding: 8px 10px;
+  font-size: 0.8em;
+  color: #555;
+  line-height: 1.4;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px 20px;
+  align-items: start;
+}
+
+.video-item {
+  margin: 0;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.video-item video {
+  width: 100%;
+  display: block;
+}
+
+.video-item figcaption {
+  padding: 8px 10px;
+  font-size: 0.8em;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* =========================
+   MAP RESET BUTTON
+========================= */
+
+.reset-view-btn {
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85em;
+  letter-spacing: 0.4px;
+  color: #333;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.reset-view-btn:hover {
+  background: #e63946;
+  color: white;
+  border-color: #e63946;
+}
+
+/* =========================
+   CUSTOM MAP MARKERS
+========================= */
+
+.custom-marker .marker-inner {
+  width: 20px;
+  height: 20px;
+  background: #e63946;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+
+.leaflet-marker-icon {
+  transition: transform 0.2s ease;
+}
+
+/* =========================
+   HOMEPAGE HERO VARIANT
+========================= */
+
+.hero-home img {
+  object-position: center 70%;
+}
+
+.hero-home .hero-overlay {
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 80px;
+}
+
+.hero-home .hero-text {
+  text-align: center;
+}
+
+.hero-home .hero-text h1 {
+  font-size: 3.2em;
+}
+
+/* =========================
+   STATS STRIP
+========================= */
+
+.stats-strip {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-top: 3px solid #e63946;
+  border-bottom: 1px solid #ddd;
+}
+
+.stat {
+  padding: 18px 52px;
+  text-align: center;
+  border-right: 1px solid #eee;
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat-number {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2em;
+  color: #e63946;
+  line-height: 1;
+}
+
+.stat-label {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72em;
+  color: #777;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* =========================
+   REFERENCES
+========================= */
+
+.references {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 16px auto;
+}
+
+.references li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.88em;
+  line-height: 1.7;
+}
+
+.references li:last-child {
+  border-bottom: none;
+}
+
+.references a {
+  color: #e63946;
+  text-decoration: none;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER NAV
+========================= */
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #e63946;
+}
+
+footer p a {
+  color: #666;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #e63946;
+}

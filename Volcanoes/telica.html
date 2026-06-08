@@ -202,7 +202,13 @@ The volcano is continuously monitored by the Nicaraguan Institute of Territorial
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>GLightbox();</script>
+<script>
+GLightbox();
+document.querySelectorAll('.timeline li').forEach(li => {
+  const idx = li.innerHTML.indexOf(':');
+  if (idx > -1) li.innerHTML = '<strong>' + li.innerHTML.slice(0, idx + 1) + '</strong>' + li.innerHTML.slice(idx + 1);
+});
+</script>
 
 </body>
 </html>

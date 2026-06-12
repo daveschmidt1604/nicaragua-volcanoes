@@ -45,7 +45,7 @@ section p {
 .hero {
   position: relative;
   width: 100%;
-  height: 520px;
+  height: 700px;
   overflow: hidden;
 }
 
@@ -57,6 +57,7 @@ section p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 40%;
   display: block;
 }
 
@@ -91,11 +92,57 @@ section p {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 24px 32px 44px;
+}
+
+.hero-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.hero-facts {
+  background: rgba(255, 255, 255, 0.93);
+  border-left: 3px solid #e63946;
+  border-radius: 4px;
+  padding: 20px 26px;
+  min-width: 270px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+  flex-shrink: 0;
+}
+
+.hero-facts dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 14px;
+  margin: 0;
+  font-size: 0.93em;
+  color: #222;
+  line-height: 1.4;
+}
+
+.hero-facts dt {
+  font-family: 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 0.4px;
+}
+
+.hero-facts dd {
+  margin: 0;
+}
+
+.hero-facts a {
+  color: #e63946;
+  text-decoration: none;
+}
+
+.hero-facts a:hover {
+  text-decoration: underline;
 }
 
 .hero-back {

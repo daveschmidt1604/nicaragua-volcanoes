@@ -99,21 +99,21 @@ section p {
   padding: 24px 32px 44px;
 }
 
-.hero-bottom {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
+.hero-wrap {
+  position: relative;
 }
 
 .hero-facts {
+  position: absolute;
+  bottom: 44px;
+  right: 32px;
+  z-index: 10;
   background: rgba(255, 255, 255, 0.93);
   border-left: 3px solid #e63946;
   border-radius: 4px;
   padding: 20px 26px;
   min-width: 270px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
-  flex-shrink: 0;
 }
 
 .hero-facts dl {
@@ -600,6 +600,13 @@ footer {
   .key-facts dl {
     grid-template-columns: 110px 1fr;
   }
+
+  .hero-facts {
+    position: static;
+    margin: 16px;
+    min-width: unset;
+    border-radius: 4px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -635,7 +642,7 @@ footer {
   }
 
   section p {
-    text-align: left;
+    text-align: justify;
   }
 }
 

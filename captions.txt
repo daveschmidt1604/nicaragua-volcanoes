@@ -1,0 +1,45 @@
+Photos: thumbnail shows date only; full caption appears in the lightbox on click.
+Videos: caption shown directly below the video player.
+The right side of each | is the full caption text used on the website.
+------------------------------------------------
+
+MASAYA — Photos
+masaya_2009_002.jpg            | November 2009 — View of the northwestern Santiago crater wall and visitor viewpoint
+masaya_2016_002.jpg            | November 2016 — Looking down into the active vent; lava lake visible at the base of Santiago crater
+masaya_2017_001.jpg            | March 2017 — Incandescent lava lake surface at Santiago crater during high activity
+masaya_2017_drone_001.jpg      | November 2017 — Aerial view of Santiago crater rim; iron cross monument above the gas-filled pit
+masaya_2025_001.jpg            | March 2025 — Santiago crater interior; minor fumarolic degassing and sulfur deposits
+
+MASAYA — Videos
+masaya_2017_001.mp4            | March 2017 — Lava lake with steam emission, drone footage
+masaya_2017_vent.mp4           | March 2017 — Nighttime view of lava lake activity
+masaya_2024_drone_001.mp4      | February 2024 — Santiago crater lava lake from aerial drone
+
+------------------------------------------------
+
+TELICA — Photos
+telica_1994-02-03_slide-012.jpg     | February 1994 — Glowing vent inside Telica's crater; incandescent material visible at the crater floor
+telica_1994-06_slide-029.jpg        | June 1994 — Telica volcano from the lowlands; symmetrical scoria cone with vegetated lower flanks
+telica_1994-06_slide-034.jpg        | June 1994 — Summit crater visible from distance; forested lower flanks of Telica
+telica_2011-08-09_crater-floor.jpg  | August 2011 — Telica crater floor with multiple active fumaroles; degassing from rocky interior
+telica_2011_001.jpg                 | August 2011 — Vulcanian explosion at Telica; large ash column rising from the summit crater
+telica_2015_002.jpg                 | December 2015 — Ash-covered flanks of Telica viewed from the lowlands; hole in roof caused by volcanic ejecti
+telica_2021_001.jpg                 | November 2021 — Dense gas and steam plume from Telica crater; view along the ash-covered crater rim
+telica_2022_001.jpg                 | November 2022 — Researcher at Telica crater rim; active degassing from the summit
+telica_2022_drone_001.jpg           | November 2022 — Aerial view of Telica summit; continuous degassing column from the active crater
+
+TELICA — Videos
+telica_2011_001.mp4            | May 2011 — Vulcanian explosion at Telica; large ash column with lightning in the eruptive column
+telica_2022_drone_001.mp4      | November 2022 — Aerial drone footage of Telica; intense degassing from the crater floor and inner flanks
+
+------------------------------------------------
+
+CERRO NEGRO — Photos
+cerro-negro_1995-11-12_strombolian-vulcanian_slide-003.jpg  | November 1995 — Sub-Plinian eruption column rising from Cerro Negro summit
+cerro-negro_1995-11-12_strombolian-vulcanian_slide-033.jpg  | November 1995 — Multiple ash plumes from the summit vent; view from the upper flank
+cerro-negro_1995-11-12_strombolian-vulcanian_slide-034.jpg  | November 1995 — Freshly deposited volcanic bombs with residual incandescence
+cerro-negro_1995-11-12_strombolian-vulcanian_slide-169.jpg  | November 1995 — Lava fountain and ash cloud during Strombolian–Vulcanian eruption phase
+cerro-negro_1995-11-12_strombolian-vulcanian_slide-175.jpg  | November 1995 — Eruption column detail; cauliflower-shaped ash cloud during explosive phase
+cerro-negro_1999_001.jpg                                    | September 1999 — Aerial view of nested craters; incandescent lava visible at the active inner vent
+cerro-negro_2017_drone_002.jpg                              | March 2017 — Drone view of Cerro Negro summit; hydrothermal alteration staining on upper flanks
+cerro-negro_2025_001.jpg                                    | March 2025 — Basaltic lava blocks and erosional spires on the outer flank of Cerro Negro
